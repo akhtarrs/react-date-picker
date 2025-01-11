@@ -1,0 +1,210 @@
+.date-picker-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+  position: relative;
+}
+
+.input-wrapper {
+  border-radius: 5px;
+  margin: 2px;
+  border: 2px solid #ddd;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+
+input[type="text"] {
+  font-family: "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fff;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #ff6600;
+}
+
+.calendar-icon {
+  width: 20px;
+  height: 20px;
+  color: #ff6600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.calendar-icon:hover {
+  color: #b30000;
+}
+
+.calendar {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 100;
+  display: none;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0px 10px 60px #00000059;
+}
+
+.calendar.active {
+  display: block;
+}
+
+.calendar table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.calendar th,
+.calendar td {
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+}
+
+.calendar th {
+  background-color: #f5f5f5;
+}
+
+/* Last Month Dates */
+.last-month {
+  color: #fccaa8;
+}
+
+/* Current Month Dates */
+.current-month {
+  color: #ff6600;
+}
+
+/* Next Month Dates */
+.next-month {
+  color: #fccaa8;
+}
+
+.next-month:hover {
+  color: #fccaa8;
+}
+
+/* Highlight for selected date */
+.selected-date {
+  background-color: #ffe4b5;
+  transition: background-color 0.3s ease;
+  border-radius: 50%;
+}
+
+.disabled-date {
+  cursor: none;
+  color: #ccc;
+}
+
+.disabled-date:hover {
+  cursor: not-allowed;
+}
+
+.enabled-date:hover {
+  color: #ffffff;
+  background-color: #ff6600;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+.picker-type {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+
+/* The Raio button */
+.radio-button {
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: relative;
+  padding: 1px;
+  height: 14px;
+  width: 14px;
+  background-color: #ffffff;
+  border: 1px solid #ff6600;
+  border-radius: 50%;
+}
+
+
+/* When the radio button is checked, add a blue background */
+.radio-button input:checked~.checkmark {
+  border: 1px solid #e68646;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-button input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-button .checkmark:after {
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff6600;
+  transform: translate(-50%, -50%)
+}
+
+.calender-button {
+  cursor: pointer;
+  padding: 0px;
+  border: none;
+  background: none;
+  color: #ff6600;
+}
+
+.calender-button:disabled {
+  color: #8b715f;
+}
+
+.calender-button:hover {
+  background-color: #dadada;
+  border-radius: 10px;
+}
