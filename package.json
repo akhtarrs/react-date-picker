@@ -1,0 +1,58 @@
+{
+  "name": "react-date-picker",
+  "version": "1.0.0",
+  "description": "React date picker component with picker type like \"daily\", \"weekly\", \"monthly\" range of date selection.",
+  "keywords": [
+    "date",
+    "picker",
+    "date",
+    "selection",
+    "date",
+    "range",
+    "selection",
+    "calender",
+    "react",
+    "react",
+    "date",
+    "picker",
+    "form",
+    "component",
+    "daily",
+    "selection",
+    "weekly",
+    "selection",
+    "monthly",
+    "selection",
+    "weekly",
+    "date",
+    "range",
+    "monthly",
+    "date",
+    "range",
+    "modern",
+    "date",
+    "picker",
+    "range",
+    "lightweight"
+  ],
+  "homepage": "https://github.com/akhtarrs/react-date-picker#readme",
+  "bugs": {
+    "url": "https://github.com/akhtarrs/react-date-picker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhtarrs/react-date-picker.git"
+  },
+  "license": "ISC",
+  "author": "Akhtar Shaikh",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
