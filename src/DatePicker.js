@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./DatePicker.css"; // External CSS for styling
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 const DatePicker = ({ type = "daily", date = null, daysAgo = 90, onDateChange }) => {
   const today = new Date();
@@ -276,13 +274,13 @@ const DatePicker = ({ type = "daily", date = null, daysAgo = 90, onDateChange })
               </th>
               <th>
                 <button onClick={handlePrevMonth} disabled={!isValidDate(new Date(calenderYear, calenderMonth - 1, 30))} className="calender-button">
-                  <ChevronLeftIcon />
+                &lt
                 </button>
               </th>
 
               <th>
                 <button onClick={handleNextMonth} disabled={!isValidDate(new Date(calenderYear, calenderMonth + 1, 1))} className="calender-button">
-                  <ChevronRightIcon />
+                &gt
                 </button>
               </th>
             </tr>

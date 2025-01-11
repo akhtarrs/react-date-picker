@@ -1,5 +1,5 @@
 {
-  "name": "react-date-picker",
+  "name": "@akhtarrs/react-date-picker",
   "version": "1.0.0",
   "description": "React date picker component with picker type like \"daily\", \"weekly\", \"monthly\" range of date selection.",
   "keywords": [
@@ -48,11 +48,33 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
-  }
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "files": [
     "dist",
     "README.md",
     "LICENSE"
-  ]
+  ],
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
